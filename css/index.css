@@ -172,38 +172,13 @@ input {
 }
 
 @media (max-width: 500px) {
-  .shuffle button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
-  }
-}
-
-@media (max-width: 500px) {
   .shuffle {
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    padding-top: 25px;
-    width: 100%;
+    text-align: left;
+    margin: -52px 1rem 0;
   }
+
   .shuffle .encompass {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    margin-bottom: 20px;
-  }
-  .super {
-    font-size: 1em;
-  }
-  .sub {
-    font-size: 1.2em;
-  }
-  .shuffle button {
-    font-size: 1.2em;
-    margin-top: 5px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -250,6 +225,21 @@ img.feature-image {
   font-size: 1.2em;
   line-height: 2;
   color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 500px) {
+  .section h3,
+  #faq.section h3 {
+    font-size: 2.2em;
+  }
+
+  .section .desc {
+    font-size: 1em;
+  }
+
+  .faq-item p {
+    font-size: 1rem;
+  }
 }
 
 /* Button */
@@ -375,10 +365,13 @@ img.feature-image {
   display: grid;
 }
 
-
 @media screen and (min-width: 500px) {
   .partner {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .mobile-break {
+    display: none;
   }
 }
 
