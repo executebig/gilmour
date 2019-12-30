@@ -237,8 +237,12 @@ img.feature-image {
     font-size: 1em;
   }
 
+  .faq-item h6 {
+    font-size: 1.2rem!important;
+  }
+
   .faq-item p {
-    font-size: 1rem;
+    font-size: 1rem!important;
   }
 }
 
@@ -281,7 +285,6 @@ img.feature-image {
 }
 
 .faq-grid {
-  margin: auto auto 36px;
   display: grid;
   gap: 32px 18px;
 }
@@ -297,6 +300,7 @@ img.feature-image {
 @media screen and (min-width: 500px) {
   .faq-grid {
     grid-template-columns: 1fr 1fr;
+    margin: auto auto 36px;
   }
 }
 
@@ -373,10 +377,23 @@ img.feature-image {
   .mobile-break {
     display: none;
   }
+
+  .partner .partner-logo {
+    padding: 2rem 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .partner .partner-logo {
+    margin: 1rem auto 0 auto;
+  }
+
+  .partner .partner-desc {
+    text-align: center;
+  }
 }
 
 .partner .partner-logo {
-  padding: 2rem 5rem;
   width: 200px;
 }
 
