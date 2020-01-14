@@ -384,8 +384,10 @@ img.feature-image {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  width: 300px;
+  width: auto;
   height: auto;
+  max-height: 100px;
+  padding: 10px;
 }
 
 .partner {
