@@ -438,12 +438,83 @@ img.feature-image {
   );
 }
 
-#particles-js canvas{
+#particles-js canvas {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
-  max-height:450px !important;
+  max-height: 450px !important;
+}
+
+.schedule-column {
+  float: left;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .schedule-column {
+    float: none;
+    width: 100%;
+  }
+}
+
+.schedule-column p {
+  font-size: 1.1rem;
+}
+
+.schedule-column table {
+  text-align: left;
+}
+
+.schedule-column td,
+.schedule-column th {
+  padding-right: 20px;
+}
+
+.schedule-column table {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+.schedule-column th {
+  padding: 10px;
+}
+
+.schedule-column td {
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.schedule-column td.time {
+  font-weight: bold;
+  width: 25%;
+}
+
+.schedule-column td.event {
+  width: 100%;
+}
+
+.schedule-column tr.logistic .time {
+  border-left: 5px solid var(--gilmour-darkblue);
+}
+
+.schedule-column tr.food .time {
+  border-left: 5px solid darkgreen;
+}
+
+.schedule-column tr.workshop .time {
+  border-left: 5px solid var(--gilmour-gold);
+}
+
+.schedule-column tr.activity .time {
+  border-left: 5px solid var(--gilmour-purple);
+}
+
+/* Clear floats after the columns */
+.schedule-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
 }
